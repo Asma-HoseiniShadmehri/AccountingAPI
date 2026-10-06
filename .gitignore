@@ -1,0 +1,39 @@
+# پوشه‌های بیلد
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+
+# فایل‌های Visual Studio
+.vs/
+*.user
+*.suo
+*.userprefs
+
+# فایل‌های کش
+.vscode/
+.idea/
+
+# فایل‌های بیلد
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# Connection Stringهای محلی
+appsettings.Development.json
+
+# فایل‌های دیتابیس محلی
+*.mdf
+*.ldf
+*.ndf
+
+# فایل‌های NuGet
+*.nupkg
+packages/
+
+# فایل‌های لاگ
+*.log
+
+# فایل‌های سیستم
+Thumbs.db
+.DS_Store

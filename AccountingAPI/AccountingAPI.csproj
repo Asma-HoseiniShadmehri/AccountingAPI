@@ -1,0 +1,31 @@
+﻿<!-- پروژه از نوع SDK وب برای ساخت API -->
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<!-- تنظیمات کلی پروژه -->
+	<PropertyGroup>
+		<!-- هدف فریمورک .NET نسخه 8 -->
+		<TargetFramework>net8.0</TargetFramework>
+		<!-- فعال بودن قابلیت nullable reference types -->
+		<Nullable>enable</Nullable>
+		<!-- استفاده خودکار از usings سراسری -->
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<!-- بسته های نا÷گت (NuGet Packages) مورد نیاز پروژه -->
+	<ItemGroup>
+		<!-- EF Core اصلی برای کار با دیتابیس -->
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.2" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+		<!-- EF Core برای SQL Server -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+		<!-- ابزارهای EF Core برای Migration و آپدیت دیتابیس -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+			<!-- این assets فقط برای زمان کامپایل و اجرا لازم است -->
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<!-- سواگر (Swagger) برای مستندسازی و تست API -->
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	</ItemGroup>
+
+</Project>
