@@ -37,3 +37,7 @@ packages/
 # فایل‌های سیستم
 Thumbs.db
 .DS_Store
+# فایل تنظیمات با رمزهای حساس
+appsettings.json
+appsettings.*.json
+!appsettings.example.json
